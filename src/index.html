@@ -7,14 +7,33 @@
     <title>Advanced JS</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+
       main {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         height: 100vh;
         gap: 30px;
+        text-align: center;
       }
+
+      h1 {
+        font-size: 36px;
+        color: #333;
+      }
+
       a {
         padding: 15px 30px;
         background-color: #4caf50;
@@ -24,15 +43,17 @@
         border-radius: 8px;
         transition: background-color 0.3s;
       }
+
       a:hover {
         background-color: #45a049;
       }
     </style>
   </head>
   <body class="body-index">
-    <ul>
-      <li><a href="./1-timer.html">Countdown timer</a></li>
-      <li><a href="./2-snackbar.html">Promise generator</a></li>
-    </ul>
+    <main>
+      <h1>Ласкаво просимо!</h1>
+      <a href="./1-timer.html">🕒 Countdown timer</a>
+      <a href="./2-snackbar.html">⚡ Promise generator</a>
+    </main>
   </body>
 </html>

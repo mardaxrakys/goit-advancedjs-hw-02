@@ -7,41 +7,43 @@
     <title>Countdown timer</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/timer.css" />
   </head>
-  <body class="body-timer">
-    <p><a href="./index.html">Go back</a></p>
+  <body>
+    <div class="timer-container">
+      <p><a href="./index.html" class="go-back">⬅ Go back</a></p>
 
-    <div class="timer-wrap">
-      <input class="picker" type="text" id="datetime-picker" />
-      <button class="btn-start" type="button" data-start>Start</button>
-      <button
-        class="btn-reload"
-        value="Refresh Page"
-        onClick="window.location.href=window.location.href"
-      >
-        Reload page
-      </button>
+      <div class="timer-wrap">
+        <input class="picker" type="text" id="datetime-picker" />
+        <button class="btn-start" type="button" data-start>Start</button>
+        <button
+          class="btn-reload"
+          value="Refresh Page"
+          onClick="window.location.href=window.location.href"
+        >
+          Reload page
+        </button>
+      </div>
+
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
     </div>
-
-    <div class="timer">
-      <div class="field">
-        <span class="value" data-days>00</span>
-        <span class="label">Days</span>
-      </div>
-      <div class="field">
-        <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="field">
-        <span class="value" data-minutes>00</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="field">
-        <span class="value" data-seconds>00</span>
-        <span class="label">Seconds</span>
-      </div>
-    </div>
-
     <script src="./js/1-timer.js" type="module"></script>
   </body>
 </html>

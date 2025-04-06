@@ -17,5 +17,5 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 /* Tasks style */
-@import url('./tasks/timer.css');
-@import url('./tasks/snackbar.css');
+@import url('./timer.css');
+@import url('./snackbar.css');
