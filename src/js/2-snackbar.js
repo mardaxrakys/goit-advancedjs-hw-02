@@ -11,9 +11,12 @@ form.addEventListener('submit', event => {
 
   if (delay < 0) {
     iziToast.warning({
-      title: 'Warning',
-      message: '❗ Please enter a positive delay',
-      position: 'topCenter',
+      title: '⚠️ Warning',
+      message: 'Please enter a positive delay.',
+      position: 'topRight',
+      timeout: 3000,
+      progressBar: true,
+      color: 'yellow',
     });
     return;
   }
@@ -21,16 +24,22 @@ form.addEventListener('submit', event => {
   createPromise(delay, state)
     .then(message => {
       iziToast.success({
-        title: 'Success',
         message,
-        position: 'bottomLeft',
+        position: 'topRight',
+        timeout: 3000,
+        progressBar: true,
+        backgroundColor: '#32CD32',
+        messageColor: '#fff',
       });
     })
     .catch(error => {
       iziToast.error({
-        title: 'Error',
         message: error,
-        position: 'bottomLeft',
+        position: 'topRight',
+        timeout: 3000,
+        progressBar: true,
+        backgroundColor: '#e74c3c',
+        messageColor: '#fff',
       });
     });
 
