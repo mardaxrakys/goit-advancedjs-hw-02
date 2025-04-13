@@ -4,66 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promise Generator</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css" />
-    <style>
-      body {
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        margin: 0;
-      }
-      .form {
-        max-width: 400px;
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      }
-      .form label,
-      .form legend {
-        font-size: 18px;
-        margin-bottom: 10px;
-        display: block;
-      }
-      input[type='number'] {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      fieldset {
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        padding: 10px;
-        border-radius: 5px;
-      }
-      fieldset label {
-        margin-right: 20px;
-      }
-      button[type='submit'] {
-        width: 100%;
-        padding: 12px;
-        background-color: #4caf50;
-        color: #fff;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-      button[type='submit']:hover {
-        background-color: #388e3c;
-      }
-    </style>
     <script type="module" crossorigin src="/goit-advancedjs-hw-02/2-snackbar.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/styles-BxrsPNZK.css">
   </head>
-  <body>
+  <body class="body-snackbar">
     <form class="form">
       <label>
         Delay (ms)
@@ -73,7 +20,8 @@
       <fieldset>
         <legend>State</legend>
         <label>
-          <input type="radio" name="state" value="fulfilled" required /> Fulfilled
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
         </label>
         <label>
           <input type="radio" name="state" value="rejected" required /> Rejected
@@ -85,5 +33,3 @@
 
   </body>
 </html>
-
-
