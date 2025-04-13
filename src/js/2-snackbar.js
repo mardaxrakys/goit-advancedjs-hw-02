@@ -23,14 +23,14 @@ form.addEventListener('submit', event => {
       iziToast.success({
         title: 'Success',
         message,
-        position: 'topCenter',
+        position: 'bottomLeft',
       });
     })
     .catch(error => {
       iziToast.error({
         title: 'Error',
         message: error,
-        position: 'topCenter',
+        position: 'bottomLeft',
       });
     });
 
